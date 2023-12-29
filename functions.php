@@ -6,7 +6,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 
 function enqueue_task_scripts() {
     wp_enqueue_style( 'task-child-style', get_stylesheet_uri(), array(), _S_VERSION );
-    wp_enqueue_script( 'fullcalendar-js', get_stylesheet_directory_uri() . '/js/fullCalendar.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'fullcalendar-js', get_stylesheet_directory_uri() . '/js/fullCalendar.js', array('jquery'), _S_VERSION, true );
 
     $array_events = array();
     $customValue = '';
